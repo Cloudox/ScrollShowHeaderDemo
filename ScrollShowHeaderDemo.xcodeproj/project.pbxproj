@@ -15,6 +15,8 @@
 		ADB7CDF41EA85BDC00E274D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB7CDF21EA85BDC00E274D0 /* LaunchScreen.storyboard */; };
 		ADB7CDFF1EA85BDC00E274D0 /* ScrollShowHeaderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7CDFE1EA85BDC00E274D0 /* ScrollShowHeaderDemoTests.m */; };
 		ADB7CE0A1EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7CE091EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.m */; };
+		ADB7CE191EA85F7400E274D0 /* OXScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7CE181EA85F7400E274D0 /* OXScrollHeaderView.m */; };
+		ADB7CE1B1EA861ED00E274D0 /* chonglang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB7CE1A1EA861ED00E274D0 /* chonglang.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		ADB7CE051EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollShowHeaderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB7CE091EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollShowHeaderDemoUITests.m; sourceTree = "<group>"; };
 		ADB7CE0B1EA85BDC00E274D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB7CE171EA85F7400E274D0 /* OXScrollHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OXScrollHeaderView.h; sourceTree = "<group>"; };
+		ADB7CE181EA85F7400E274D0 /* OXScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OXScrollHeaderView.m; sourceTree = "<group>"; };
+		ADB7CE1A1EA861ED00E274D0 /* chonglang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chonglang.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +110,13 @@
 				ADB7CDE81EA85BDC00E274D0 /* AppDelegate.m */,
 				ADB7CDEA1EA85BDC00E274D0 /* ViewController.h */,
 				ADB7CDEB1EA85BDC00E274D0 /* ViewController.m */,
+				ADB7CE171EA85F7400E274D0 /* OXScrollHeaderView.h */,
+				ADB7CE181EA85F7400E274D0 /* OXScrollHeaderView.m */,
 				ADB7CDED1EA85BDC00E274D0 /* Main.storyboard */,
 				ADB7CDF01EA85BDC00E274D0 /* Assets.xcassets */,
 				ADB7CDF21EA85BDC00E274D0 /* LaunchScreen.storyboard */,
 				ADB7CDF51EA85BDC00E274D0 /* Info.plist */,
+				ADB7CE1A1EA861ED00E274D0 /* chonglang.jpg */,
 				ADB7CDE41EA85BDC00E274D0 /* Supporting Files */,
 			);
 			path = ScrollShowHeaderDemo;
@@ -249,6 +257,7 @@
 				ADB7CDF41EA85BDC00E274D0 /* LaunchScreen.storyboard in Resources */,
 				ADB7CDF11EA85BDC00E274D0 /* Assets.xcassets in Resources */,
 				ADB7CDEF1EA85BDC00E274D0 /* Main.storyboard in Resources */,
+				ADB7CE1B1EA861ED00E274D0 /* chonglang.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB7CDEC1EA85BDC00E274D0 /* ViewController.m in Sources */,
+				ADB7CE191EA85F7400E274D0 /* OXScrollHeaderView.m in Sources */,
 				ADB7CDE91EA85BDC00E274D0 /* AppDelegate.m in Sources */,
 				ADB7CDE61EA85BDC00E274D0 /* main.m in Sources */,
 			);
