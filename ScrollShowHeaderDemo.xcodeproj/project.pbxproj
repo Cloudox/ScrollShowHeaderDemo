@@ -17,6 +17,7 @@
 		ADB7CE0A1EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7CE091EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests.m */; };
 		ADB7CE191EA85F7400E274D0 /* OXScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7CE181EA85F7400E274D0 /* OXScrollHeaderView.m */; };
 		ADB7CE1B1EA861ED00E274D0 /* chonglang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB7CE1A1EA861ED00E274D0 /* chonglang.jpg */; };
+		ADB7CE1D1EA8B37900E274D0 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ADB7CE1C1EA8B37900E274D0 /* demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		ADB7CE171EA85F7400E274D0 /* OXScrollHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OXScrollHeaderView.h; sourceTree = "<group>"; };
 		ADB7CE181EA85F7400E274D0 /* OXScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OXScrollHeaderView.m; sourceTree = "<group>"; };
 		ADB7CE1A1EA861ED00E274D0 /* chonglang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chonglang.jpg; sourceTree = "<group>"; };
+		ADB7CE1C1EA8B37900E274D0 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				ADB7CDFD1EA85BDC00E274D0 /* ScrollShowHeaderDemoTests */,
 				ADB7CE081EA85BDC00E274D0 /* ScrollShowHeaderDemoUITests */,
 				ADB7CDE21EA85BDC00E274D0 /* Products */,
+				ADB7CE1C1EA8B37900E274D0 /* demo.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +259,7 @@
 			files = (
 				ADB7CDF41EA85BDC00E274D0 /* LaunchScreen.storyboard in Resources */,
 				ADB7CDF11EA85BDC00E274D0 /* Assets.xcassets in Resources */,
+				ADB7CE1D1EA8B37900E274D0 /* demo.gif in Resources */,
 				ADB7CDEF1EA85BDC00E274D0 /* Main.storyboard in Resources */,
 				ADB7CE1B1EA861ED00E274D0 /* chonglang.jpg in Resources */,
 			);
