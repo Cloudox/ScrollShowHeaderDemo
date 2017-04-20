@@ -35,7 +35,6 @@
 // 初始化列表
 - (void)initTableView {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
-//    self.tableView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT-200);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc] init];// 去除多余的列表线条

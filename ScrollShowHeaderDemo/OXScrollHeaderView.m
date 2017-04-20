@@ -23,13 +23,14 @@
     return self;
 }
 
-#pragma mark - scroll state
+#pragma mark - UIView Delegate
 // 在被添加到界面上时就添加对contentoffset的观察
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [self.headerScrollView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:Nil];
     self.headerScrollView.contentInset = UIEdgeInsetsMake(BOTTOM, 0, 0, 0);
 }
 
+#pragma mark - KVO
 // 对contentoffset的键值观察
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     CGPoint newOffset = [change[@"new"] CGPointValue];
