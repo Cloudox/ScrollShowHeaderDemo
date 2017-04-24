@@ -33,12 +33,6 @@
     [self initTableView];// 初始化列表
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
-    [self.tableView removeObserver:self.scrollHeader forKeyPath:@"contentOffset"];
-}
-
 // 初始化列表
 - (void)initTableView {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
@@ -83,6 +77,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 选中后取消选中的颜色
     
+}
+
+- (void)dealloc {
+    [self.tableView removeObserver:self.scrollHeader forKeyPath:@"contentOffset"];
 }
 
 - (void)didReceiveMemoryWarning {
