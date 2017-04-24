@@ -26,7 +26,7 @@
 #pragma mark - UIView Delegate
 // 在被添加到界面上时就添加对contentoffset的观察
 - (void)willMoveToSuperview:(UIView *)newSuperview {
-    [self.headerScrollView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:Nil];
+//    [self.headerScrollView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:Nil];
     self.headerScrollView.contentInset = UIEdgeInsetsMake(BOTTOM, 0, 0, 0);
 }
 

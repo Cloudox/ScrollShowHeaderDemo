@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;// 列表
 @property (nonatomic, strong) NSArray *dataArray;// 列表数据
+@property (nonatomic, strong) OXScrollHeaderView *scrollHeader;// 顶部视图
 
 @end
 
@@ -32,6 +33,12 @@
     [self initTableView];// 初始化列表
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.tableView removeObserver:self.scrollHeader forKeyPath:@"contentOffset"];
+}
+
 // 初始化列表
 - (void)initTableView {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
@@ -41,9 +48,10 @@
     [self.view addSubview:self.tableView];
     [self.tableView setContentOffset:CGPointMake(0, -200)];
     
-    OXScrollHeaderView *scrollHeader = [[OXScrollHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 200)];
-    scrollHeader.headerScrollView = self.tableView;
-    [self.view addSubview:scrollHeader];
+    self.scrollHeader = [[OXScrollHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 200)];
+    self.scrollHeader.headerScrollView = self.tableView;
+    [self.tableView addObserver:self.scrollHeader forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:nil];
+    [self.view addSubview:self.scrollHeader];
 }
 
 #pragma mark - UITableView DataSource
